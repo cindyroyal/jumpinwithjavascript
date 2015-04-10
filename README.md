@@ -23,7 +23,7 @@ a.	Modify the script to concatenate the first and last name in the greeting.
 4.	Password Evaluation: Write a script that prompts for a password, and responds appropriately if it is greater than 8 characters.  This script will use the length function.
 5.	Do the Math: Write a script that handles a mathematical calculation from two numbers that are provided by a prompt.
 6.	Form and Function: Convert to HTML form input. Set up a page with a form element to capture first and last name and have it manipulate the DOM for greeting. This input method can be applied to any of the above exercises by replacing the prompts.
-7.	Name Evaluation: Write a script that uses a form to ask for three names, and responds with a name that has more than 5 characters in them. This will demonstrate an “if statement.”
+7.	Name Evaluation: Write a script that uses a form to ask for three names, and responds with a name that has more than 5 characters in it. This will demonstrate an “if statement.”
 a.	Change the script so that it asks the user to enter the number of characters to evaluate.
 b.	Handle the situation if none of the names meet the condition and if more than one name meets the condition.
 
