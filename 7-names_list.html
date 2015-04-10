@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Form</title>
+</head>
+<body>
+<form  id="form1" action=" "/>
+<p>Input Name 1: <input type="text" id="name1" /></p>
+<p>Input Name 2: <input type="text" id="name2" /></p>
+<p>Input Name 3: <input type="text" id="name3" /></p>
+<input type="submit" value="Submit">
+</form>
+<p><span id="namelist"></p>
+<p id="names""></p>
+
+
+<script>
+// this script adds an if statement to handle condition when no name has 5 characters
+// the following lines grab the input from the form and store it in variables
+    document.getElementById("form1").onsubmit=function() {
+    name1 = document.forms["form1"]["name1"].value;
+    name2 = document.forms["form1"]["name2"].value;
+    name3 = document.forms["form1"]["name3"].value;
+    //the next line reads each name into an array
+    namelist = [name1, name2, name3];  
+    
+    //this loop creates the script to find a name with more than 5 characters. Note, it only evaluates for one name with 5 or more characters.
+    //
+    document.getElementById("namelist").innerHTML = "The names are " + namelist;
+    for(i=0;i<namelist.length; i++) {
+    if(namelist[i].length >= 5) {
+    document.getElementById("names").innerHTML = namelist[i] + " has " + 5 + " or more letters in it";
+    } // end if
+    
+    } // end for
+    
+
+
+return false; // required to not refresh the page; just leave this here
+
+}// end the submit function
+</script>
+</body>
+</html>
