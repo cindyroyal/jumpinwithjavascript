@@ -36,25 +36,6 @@ Students are first asked to provide a description of the algorithm they will use
 
 This lesson is a good introduction to lead to more advanced topics like the JQuery library, using other languages and learning about scraping and application programming interfaces.
 
-The simple script for number 2a is provided below:
-
-  <!DOCTYPE html>
-  <html>
-  <head>
-  <title>My JavaScript</title>
-  </head>
-  <body>
-  <p>Hello <span id="name"></span></p>
-
-  <script>
-    first = prompt("What is your first name?");	
-    last = prompt("What is your last name?");
-    document.getElementById('name').innerHTML = first + " " + last; 
-
-  </script>
-  </body>
-  </html>
-
 Code examples for each of the exercises is available in this repository. 
 
 Here is an example of one project created by a student this semester:
