@@ -10,11 +10,11 @@
 <input type="submit" value="Submit">
 </form>
 <p id="yourname">Please provide your name above.</p>
-<p id="jloname"></p>
+
 <script>
 document.getElementById("form1").onsubmit=function() {
-    var firstName = document.forms["form1"]["firstname"].value;
-    var lastName = document.forms["form1"]["lastname"].value;
+    var firstName = document.getElementById("firstname").value;
+    var firstName = document.getElementById("lastname").value;
     var yourName = firstName + " " + lastName;
     document.getElementById("yourname").innerHTML = "Hi " + yourName + ". Welcome to the site.";
    
